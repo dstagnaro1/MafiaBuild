@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8014F2611D126A4A0012861F /* RolesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8014F2601D126A4A0012861F /* RolesVC.swift */; };
+		802554C51D0E6ADE00C87C46 /* NamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802554C41D0E6ADE00C87C46 /* NamesVC.swift */; };
+		803CAD971D0E157500F6E436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CAD961D0E157500F6E436 /* AppDelegate.swift */; };
+		803CAD991D0E157500F6E436 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CAD981D0E157500F6E436 /* GameVC.swift */; };
+		803CAD9C1D0E157500F6E436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803CAD9A1D0E157500F6E436 /* Main.storyboard */; };
+		803CAD9E1D0E157500F6E436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803CAD9D1D0E157500F6E436 /* Assets.xcassets */; };
+		803CADA11D0E157500F6E436 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803CAD9F1D0E157500F6E436 /* LaunchScreen.storyboard */; };
+		803CADAA1D0E18F100F6E436 /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CADA91D0E18F100F6E436 /* NotesVC.swift */; };
+		803CADAE1D0E278500F6E436 /* PlayerNumbersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803CADAD1D0E278500F6E436 /* PlayerNumbersVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8014F2601D126A4A0012861F /* RolesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolesVC.swift; sourceTree = "<group>"; };
+		802554C41D0E6ADE00C87C46 /* NamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamesVC.swift; sourceTree = "<group>"; };
+		803CAD931D0E157500F6E436 /* Mafia Build.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mafia Build.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		803CAD961D0E157500F6E436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		803CAD981D0E157500F6E436 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		803CAD9B1D0E157500F6E436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		803CAD9D1D0E157500F6E436 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		803CADA01D0E157500F6E436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		803CADA21D0E157500F6E436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803CADA91D0E18F100F6E436 /* NotesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
+		803CADAD1D0E278500F6E436 /* PlayerNumbersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNumbersVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		803CAD901D0E157500F6E436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		803CAD8A1D0E157500F6E436 = {
+			isa = PBXGroup;
+			children = (
+				803CAD951D0E157500F6E436 /* Mafia Build */,
+				803CAD941D0E157500F6E436 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		803CAD941D0E157500F6E436 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				803CAD931D0E157500F6E436 /* Mafia Build.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		803CAD951D0E157500F6E436 /* Mafia Build */ = {
+			isa = PBXGroup;
+			children = (
+				803CAD9A1D0E157500F6E436 /* Main.storyboard */,
+				803CADAC1D0E1D5600F6E436 /* Controller */,
+				803CAD961D0E157500F6E436 /* AppDelegate.swift */,
+				803CAD9F1D0E157500F6E436 /* LaunchScreen.storyboard */,
+				803CAD9D1D0E157500F6E436 /* Assets.xcassets */,
+				803CADA21D0E157500F6E436 /* Info.plist */,
+			);
+			path = "Mafia Build";
+			sourceTree = "<group>";
+		};
+		803CADAC1D0E1D5600F6E436 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				803CAD981D0E157500F6E436 /* GameVC.swift */,
+				803CADAD1D0E278500F6E436 /* PlayerNumbersVC.swift */,
+				802554C41D0E6ADE00C87C46 /* NamesVC.swift */,
+				8014F2601D126A4A0012861F /* RolesVC.swift */,
+				803CADA91D0E18F100F6E436 /* NotesVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		803CAD921D0E157500F6E436 /* Mafia Build */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803CADA51D0E157500F6E436 /* Build configuration list for PBXNativeTarget "Mafia Build" */;
+			buildPhases = (
+				803CAD8F1D0E157500F6E436 /* Sources */,
+				803CAD901D0E157500F6E436 /* Frameworks */,
+				803CAD911D0E157500F6E436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mafia Build";
+			productName = "Mafia Build";
+			productReference = 803CAD931D0E157500F6E436 /* Mafia Build.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		803CAD8B1D0E157500F6E436 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Daniel Stagnaro";
+				TargetAttributes = {
+					803CAD921D0E157500F6E436 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8VDD8AKFJ8;
+					};
+				};
+			};
+			buildConfigurationList = 803CAD8E1D0E157500F6E436 /* Build configuration list for PBXProject "Mafia Build" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 803CAD8A1D0E157500F6E436;
+			productRefGroup = 803CAD941D0E157500F6E436 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				803CAD921D0E157500F6E436 /* Mafia Build */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		803CAD911D0E157500F6E436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803CADA11D0E157500F6E436 /* LaunchScreen.storyboard in Resources */,
+				803CAD9E1D0E157500F6E436 /* Assets.xcassets in Resources */,
+				803CAD9C1D0E157500F6E436 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		803CAD8F1D0E157500F6E436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803CAD991D0E157500F6E436 /* GameVC.swift in Sources */,
+				803CADAA1D0E18F100F6E436 /* NotesVC.swift in Sources */,
+				803CADAE1D0E278500F6E436 /* PlayerNumbersVC.swift in Sources */,
+				803CAD971D0E157500F6E436 /* AppDelegate.swift in Sources */,
+				8014F2611D126A4A0012861F /* RolesVC.swift in Sources */,
+				802554C51D0E6ADE00C87C46 /* NamesVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		803CAD9A1D0E157500F6E436 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803CAD9B1D0E157500F6E436 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		803CAD9F1D0E157500F6E436 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803CADA01D0E157500F6E436 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		803CADA31D0E157500F6E436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		803CADA41D0E157500F6E436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		803CADA61D0E157500F6E436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mafia Build/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielStagnaro.Mafia-Build";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		803CADA71D0E157500F6E436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mafia Build/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielStagnaro.Mafia-Build";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		803CAD8E1D0E157500F6E436 /* Build configuration list for PBXProject "Mafia Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803CADA31D0E157500F6E436 /* Debug */,
+				803CADA41D0E157500F6E436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803CADA51D0E157500F6E436 /* Build configuration list for PBXNativeTarget "Mafia Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803CADA61D0E157500F6E436 /* Debug */,
+				803CADA71D0E157500F6E436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 803CAD8B1D0E157500F6E436 /* Project object */;
+}

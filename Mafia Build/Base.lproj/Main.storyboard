@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ona-2m-2iE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Game-->
+        <scene sceneID="Ul7-TO-pSN">
+            <objects>
+                <viewController id="Cfd-I0-G9K" userLabel="Game" customClass="GameVC" customModule="Mafia_Build" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mRc-rC-SYj"/>
+                        <viewControllerLayoutGuide type="bottom" id="peZ-G1-D7J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0jb-YS-b64">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9L-37-fik">
+                                <rect key="frame" x="224" y="277.5" width="152" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="8Vc-Ld-oeo"/>
+                                    <constraint firstAttribute="height" constant="44" id="Chg-JR-hbp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                                <state key="normal" title="Go to game"/>
+                                <connections>
+                                    <segue destination="eXY-aN-T5K" kind="show" id="OH6-q1-w8H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W9L-37-fik" firstAttribute="centerX" secondItem="0jb-YS-b64" secondAttribute="centerX" id="8GR-cd-cO1"/>
+                            <constraint firstItem="W9L-37-fik" firstAttribute="centerY" secondItem="0jb-YS-b64" secondAttribute="centerY" id="KKd-Hn-QF9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wSy-Xm-QS9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LIB-Nl-u9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856" y="-341"/>
+        </scene>
+        <!--Player Numbers-->
+        <scene sceneID="Kiz-ar-0QR">
+            <objects>
+                <viewController id="eXY-aN-T5K" userLabel="Player Numbers" customClass="PlayerNumbersVC" customModule="Mafia_Build" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ipP-Gd-ewk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ax1-rQ-Hp9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LrP-VH-KaT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many players are there?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwE-rC-7dR" userLabel="topLabel">
+                                <rect key="frame" x="10" y="72" width="580" height="32"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2G-o5-Snv" userLabel="nextButton">
+                                <rect key="frame" x="272" y="506" width="56" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="2rJ-Bd-q1f"/>
+                                    <constraint firstAttribute="height" constant="45" id="rYW-yy-Hgj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="loadNames:" destination="eXY-aN-T5K" eventType="touchUpInside" id="5FA-jO-Kg6"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ix4-30-hXM">
+                                <rect key="frame" x="253" y="254" width="94" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="101" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPp-8T-d5g" userLabel="playersAmountLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minimumValue="6" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="XVd-22-boo">
+                                        <rect key="frame" x="0.0" y="62" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="stepperPressed:" destination="eXY-aN-T5K" eventType="valueChanged" id="kgw-dh-caz"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="ShR-iB-unj"/>
+                                    <constraint firstAttribute="height" constant="91" id="rRN-qp-wrM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ax1-rQ-Hp9" firstAttribute="top" secondItem="T2G-o5-Snv" secondAttribute="bottom" id="1hd-ht-lkx"/>
+                            <constraint firstItem="XwE-rC-7dR" firstAttribute="leading" secondItem="LrP-VH-KaT" secondAttribute="leading" constant="10" id="4OC-EE-jbN"/>
+                            <constraint firstItem="XwE-rC-7dR" firstAttribute="top" secondItem="ipP-Gd-ewk" secondAttribute="bottom" constant="8" id="Aep-Gk-LwZ"/>
+                            <constraint firstAttribute="trailing" secondItem="XwE-rC-7dR" secondAttribute="trailing" constant="10" id="BmA-MK-i4l"/>
+                            <constraint firstItem="ix4-30-hXM" firstAttribute="centerX" secondItem="LrP-VH-KaT" secondAttribute="centerX" id="Xzr-iZ-pzR"/>
+                            <constraint firstItem="T2G-o5-Snv" firstAttribute="centerX" secondItem="LrP-VH-KaT" secondAttribute="centerX" id="eZl-6Y-lYj"/>
+                            <constraint firstItem="XwE-rC-7dR" firstAttribute="centerX" secondItem="LrP-VH-KaT" secondAttribute="centerX" id="rLT-iJ-lfw"/>
+                            <constraint firstItem="ix4-30-hXM" firstAttribute="centerY" secondItem="LrP-VH-KaT" secondAttribute="centerY" id="vEY-vw-I6l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberOfPlayersLabel" destination="xPp-8T-d5g" id="w1a-Pk-YoA"/>
+                        <segue destination="lL4-ub-FFM" kind="show" identifier="goToNames" id="LK2-Yj-EXV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwn-VY-9Vc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2608" y="-341"/>
+        </scene>
+        <!--Names-->
+        <scene sceneID="MV6-Yz-wxq">
+            <objects>
+                <viewController id="lL4-ub-FFM" userLabel="Names" customClass="NamesVC" customModule="Mafia_Build" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wv9-UC-RrS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ftx-K5-UsQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8gs-z1-qyB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are the players names?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="yfY-Sx-bcm" userLabel="topLabel">
+                                <rect key="frame" x="10" y="72" width="580" height="32"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ges-M2-bCg" userLabel="nextButton">
+                                <rect key="frame" x="272" y="506" width="56" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="0s5-0n-Hrb"/>
+                                    <constraint firstAttribute="height" constant="45" id="uN0-Ea-qBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="loadNames:" destination="eXY-aN-T5K" eventType="touchUpInside" id="7NU-ER-L4t"/>
+                                    <segue destination="iKh-K4-62H" kind="show" id="RBz-TS-u9Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There will be \() players and 1 moderator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB0-Oh-Ak6" userLabel="playersLabel">
+                                <rect key="frame" x="184" y="269" width="233" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="9Y9-6S-XWb"/>
+                                    <constraint firstAttribute="width" constant="233" id="OCn-DE-6bT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yfY-Sx-bcm" secondAttribute="trailing" constant="10" id="0eB-ZY-PHF"/>
+                            <constraint firstItem="Ftx-K5-UsQ" firstAttribute="top" secondItem="Ges-M2-bCg" secondAttribute="bottom" id="6tT-DZ-E3r"/>
+                            <constraint firstItem="yfY-Sx-bcm" firstAttribute="top" secondItem="wv9-UC-RrS" secondAttribute="bottom" constant="8" id="CwF-Bt-sK8"/>
+                            <constraint firstItem="dB0-Oh-Ak6" firstAttribute="centerY" secondItem="8gs-z1-qyB" secondAttribute="centerY" id="Fgm-XE-w6D"/>
+                            <constraint firstItem="yfY-Sx-bcm" firstAttribute="leading" secondItem="8gs-z1-qyB" secondAttribute="leading" constant="10" id="V3I-gq-bqV"/>
+                            <constraint firstItem="Ges-M2-bCg" firstAttribute="centerX" secondItem="8gs-z1-qyB" secondAttribute="centerX" id="aTg-Ek-Mob"/>
+                            <constraint firstItem="yfY-Sx-bcm" firstAttribute="centerX" secondItem="8gs-z1-qyB" secondAttribute="centerX" id="hec-Ee-xga"/>
+                            <constraint firstItem="dB0-Oh-Ak6" firstAttribute="centerX" secondItem="8gs-z1-qyB" secondAttribute="centerX" id="zU5-7I-Bdg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playersLabel" destination="dB0-Oh-Ak6" id="y9M-x1-gVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1U-9S-Dtg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3376" y="-341"/>
+        </scene>
+        <!--Roles-->
+        <scene sceneID="zOF-NW-Mkq">
+            <objects>
+                <viewController id="iKh-K4-62H" userLabel="Roles" customClass="RolesVC" customModule="Mafia_Build" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N4W-94-tIw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lgb-9f-OKz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zkx-HJ-RHx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Determine number of roles" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="d5N-uh-rUx" userLabel="topLabel">
+                                <rect key="frame" x="0.0" y="72" width="600" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="E0s-Fs-A3H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ocg-Gb-Re2">
+                                <rect key="frame" x="253" y="132" width="94" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mafia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cX-od-Y2U">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="26"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmZ-7m-CSZ">
+                                        <rect key="frame" x="0.0" y="26" width="94" height="26"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ius-6N-Giy">
+                                        <rect key="frame" x="0.0" y="51" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="onStepperPressed:" destination="iKh-K4-62H" eventType="valueChanged" id="vKz-n1-mUh"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="snv-GM-vFe"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OaZ-Lh-WXA">
+                                <rect key="frame" x="253" y="260" width="94" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Doctors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq6-xZ-EqG">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="26"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nq4-Wu-h6G">
+                                        <rect key="frame" x="0.0" y="26" width="94" height="26"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-TN-pdc">
+                                        <rect key="frame" x="0.0" y="51" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="onStepperPressed:" destination="iKh-K4-62H" eventType="valueChanged" id="8ju-cr-daB"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="L5u-iU-hWN"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ODv-Oc-9Wx">
+                                <rect key="frame" x="225" y="371" width="150" height="87"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Towns people" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJX-QM-TQ1">
+                                        <rect key="frame" x="8" y="0.0" width="135" height="29"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiP-TL-25a">
+                                        <rect key="frame" x="69" y="29" width="13" height="29"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bun-0m-8nd">
+                                        <rect key="frame" x="28" y="58" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="onStepperPressed:" destination="iKh-K4-62H" eventType="valueChanged" id="gJh-ij-5PM"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="4th-bV-gWN"/>
+                                    <constraint firstAttribute="width" constant="150" id="zoX-jO-dmY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d5N-uh-rUx" firstAttribute="centerX" secondItem="zkx-HJ-RHx" secondAttribute="centerX" id="0PD-2s-hNO"/>
+                            <constraint firstItem="d5N-uh-rUx" firstAttribute="top" secondItem="N4W-94-tIw" secondAttribute="bottom" constant="8" id="7MM-0L-bsv"/>
+                            <constraint firstItem="ocg-Gb-Re2" firstAttribute="top" secondItem="d5N-uh-rUx" secondAttribute="bottom" constant="28.5" id="Iu9-ic-qas"/>
+                            <constraint firstItem="OaZ-Lh-WXA" firstAttribute="top" secondItem="ocg-Gb-Re2" secondAttribute="bottom" constant="48" id="RGL-HV-Vfl"/>
+                            <constraint firstItem="d5N-uh-rUx" firstAttribute="leading" secondItem="zkx-HJ-RHx" secondAttribute="leading" id="fPQ-D5-GjI"/>
+                            <constraint firstItem="ODv-Oc-9Wx" firstAttribute="top" secondItem="OaZ-Lh-WXA" secondAttribute="bottom" constant="31" id="fVe-fq-ZzH"/>
+                            <constraint firstItem="ocg-Gb-Re2" firstAttribute="centerX" secondItem="zkx-HJ-RHx" secondAttribute="centerX" id="gWf-Zo-fcD"/>
+                            <constraint firstAttribute="trailing" secondItem="d5N-uh-rUx" secondAttribute="trailing" id="icA-TZ-XGU"/>
+                            <constraint firstItem="ODv-Oc-9Wx" firstAttribute="centerX" secondItem="zkx-HJ-RHx" secondAttribute="centerX" id="pjE-1o-Go0"/>
+                            <constraint firstItem="OaZ-Lh-WXA" firstAttribute="centerX" secondItem="zkx-HJ-RHx" secondAttribute="centerX" id="wJ6-kG-dg2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doctorsAmountLabel" destination="Nq4-Wu-h6G" id="dG3-E4-CdD"/>
+                        <outlet property="mafiaAmountLabel" destination="ZmZ-7m-CSZ" id="ZG5-mo-iuq"/>
+                        <outlet property="townsPeopleAmountLabel" destination="LiP-TL-25a" id="fua-7i-eIN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBv-wN-Ngk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3376" y="417"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NotesVC" customModule="Mafia_Build" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here are the notes on the game " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H52-Dh-wW3">
+                                <rect key="frame" x="240" y="234" width="121" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="Nu4-he-x7T"/>
+                                    <constraint firstAttribute="width" constant="121" id="Sdd-SZ-WbU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H52-Dh-wW3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hHK-lf-0WR"/>
+                            <constraint firstItem="H52-Dh-wW3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m44-H5-wVX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notes" image="notes" id="eJQ-Es-7cs">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="36R-fN-U3c">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ona-2m-2iE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="b5X-0o-mGk">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="naR-ir-nSu" kind="relationship" relationship="viewControllers" id="EDe-Da-GrV"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="2Hd-od-aWd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKK-v9-Ios" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="-1"/>
+        </scene>
+        <!--Nav-->
+        <scene sceneID="dAb-3t-pi0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="naR-ir-nSu" userLabel="Nav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Game" image="game" id="PaZ-Ve-JYX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vZa-gK-kmX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cfd-I0-G9K" kind="relationship" relationship="rootViewController" id="wq8-Qo-HKU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mx3-3N-Png" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="-341"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="game" width="32" height="32"/>
+        <image name="notes" width="32" height="32"/>
+    </resources>
+</document>

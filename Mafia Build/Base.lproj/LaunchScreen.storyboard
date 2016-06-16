@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3bJ-fv-zfV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The game is loading" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyG-Te-KWf" userLabel="loading">
+                                <rect key="frame" x="215" y="498" width="170" height="62.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="0re-sR-RtA"/>
+                                    <constraint firstAttribute="height" constant="63" id="xne-bH-X7a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3bJ-fv-zfV" secondAttribute="bottom" id="EoZ-BK-9Kw"/>
+                            <constraint firstItem="3bJ-fv-zfV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HOf-qW-HPz"/>
+                            <constraint firstItem="3bJ-fv-zfV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="PJI-Nv-Ogn"/>
+                            <constraint firstItem="vyG-Te-KWf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="QPW-wz-NFk"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="vyG-Te-KWf" secondAttribute="bottom" constant="39.5" id="qSI-ej-T4S"/>
+                            <constraint firstAttribute="trailing" secondItem="3bJ-fv-zfV" secondAttribute="trailing" id="see-qG-JSU"/>
+                            <constraint firstItem="vyG-Te-KWf" firstAttribute="top" secondItem="3bJ-fv-zfV" secondAttribute="bottom" id="ujR-Bp-8wX"/>
+                            <constraint firstItem="vyG-Te-KWf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vMT-0T-BdA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QPW-wz-NFk"/>
+                                <exclude reference="ujR-Bp-8wX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="728" height="524"/>
+    </resources>
+</document>
